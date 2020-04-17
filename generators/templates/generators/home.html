@@ -2,10 +2,11 @@
 <div class="container text-center">
 
 
-<h1>Password Generator</h1>
+<h1 class="text-secondary bg-info">My Password Generator</h1>
 
 <form action="{% url 'password' %}">
- <select name="length">
+ <select class="bg-dark text-muted" name="length">
+  <option value="5">5</option>
   <option value="6">6</option>
   <option value="7">7</option>
   <option value="8">8</option>
@@ -14,15 +15,17 @@
   <option value="11">11</option>
   <option value="12">12</option>
   <option value="13">13</option>
- </select> Length
+  <option value="14">14</option>
+  <option value="15">15</option>
+ </select> <t class="bg-dark text-muted">Length</t>
  <br>
- <input type="checkbox" name="uppercase"> UpperCase
+ <input type="checkbox" name="uppercase"><t class="bg-dark text-muted"> UpperCase</t>
 <br>
- <input type="checkbox" name="numbers"> Numbers
+ <input type="checkbox" name="numbers"><t class="bg-dark text-muted"> Numbers</t>
 <br>
- <input type="checkbox" name="special"> Special Char
+ <input type="checkbox" name="special"><t class="bg-dark text-muted"> Special Char</t>
 <br>
- <input type="submit" value="Generate Password" class="btn btn-primary">
+ <input type="submit" value="Generate Password" class="btn btn-secondary text-white">
 
 
 </form>
