@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!=f-zh1c1xsp=5rby2@wyzr)f-hkf6oru45c*#jd*s*)d(ag#t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mypasswordgenerator.pythonanywhere.com']
 
 
 # Application definition
